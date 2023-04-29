@@ -1,0 +1,36 @@
+//
+//  AnimeTest.swift
+//  AnimeSwiftUI_Prueba
+//
+//  Created by Ruben Alonso on 13/4/23.
+//
+
+import Foundation
+
+//Creamos para carga de la preview, con menos elementos
+struct FilePreview:FileLocation {
+    var fileURL: URL {
+        Bundle.main.url(forResource: "animeTest", withExtension: "json")!//Lleva al Json de test
+    }
+}
+//Creamos ext de la clase principal para cargar 1º la vs de prueba
+extension AnimeVM {
+    static let preview = AnimeVM(persistance: Persistance(fileLocation: FilePreview()))//al ser static se puede llamar desde fuera
+}
+//Creamos ext del struct con una vs reducida, con datos de prueba aleatorios
+extension MyAnimeModel {
+    static let test = MyAnimeModel(title: "Demon Slayer",//al ser static se puede llamar desde fuera
+                                   description: "Mola que flipas",
+                                   year: 2021,
+                                   type: .all,
+                                   rateStar: "9.8",
+                                   votes: 6000,
+                                   status: .enEmision,
+                                   followers: 1256,
+                                   episodes: 24,
+                                   animeURL: "https:\\/\\/www3.animeflv.net\\/anime\\/dragon-ball-z-especial-1",
+                                   image: "https:\\/\\/www3.animeflv.net\\/uploads\\/animes\\/covers\\/1115.jpg",
+                                   genres: nil,
+                                   isViewed: true)
+}
+

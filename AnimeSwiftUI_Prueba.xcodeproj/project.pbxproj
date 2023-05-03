@@ -65,6 +65,7 @@
 		8043EC8829E5A9990073E882 /* AnimeSwiftUI_Prueba */ = {
 			isa = PBXGroup;
 			children = (
+				8043EC9F29E5ACE70073E882 /* Models */,
 				8094317829EAF397006C8577 /* Views */,
 				8043ECE629E868CD0073E882 /* ViewModels */,
 				8043EC9E29E5ACDD0073E882 /* System */,
@@ -97,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				8043EC8929E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift */,
-				8043EC9F29E5ACE70073E882 /* Models */,
 			);
 			name = System;
 			sourceTree = "<group>";

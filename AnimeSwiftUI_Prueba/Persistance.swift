@@ -11,7 +11,7 @@ protocol FileLocation {
     var fileURL: URL { get }
 }
 //Carga real
-struct fileProduction: FileLocation {
+struct FileProduction: FileLocation {
     var fileURL: URL {
         Bundle.main.url(forResource: "anime", withExtension: "json")!
     }
@@ -23,7 +23,7 @@ final class Persistance {
     let fileLocation:FileLocation
     let favoriteDocument = URL.documentsDirectory.appending(path:  "viewedsAnime.json")
     
-    init(fileLocation: FileLocation = fileProduction()) {
+    init(fileLocation: FileLocation = FileProduction()) {
         self.fileLocation = fileLocation
 //        print(favoriteDocument)
     }

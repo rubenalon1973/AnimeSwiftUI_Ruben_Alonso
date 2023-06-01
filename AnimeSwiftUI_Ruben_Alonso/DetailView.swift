@@ -18,7 +18,7 @@ struct DetailView: View {
                 AsyncImage(url: URL(string: anime.image )) { image in
                     image
                         .resizable()
-                        .scaledToFit()//ajusta la imagen
+                        .scaledToFit()
                         .frame(width: 300)
                         .cornerRadius(10)
                 } placeholder: {

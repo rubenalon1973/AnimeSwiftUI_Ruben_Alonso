@@ -58,7 +58,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(AnimeVM.preview)//Conecta con la preview
+            .environmentObject(AnimeVM.preview)
     }
 }
 

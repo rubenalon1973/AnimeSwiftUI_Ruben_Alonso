@@ -6,23 +6,22 @@
 //
 
 import Foundation
-//Cerebro que manda a las view
-final class AnimeVM:ObservableObject { //Objeto observable desde otro sitio
+
+final class AnimeVM:ObservableObject {
     
-    let persistance:Persistance //aquí tenemos guardada la class Persistance
-    //    publicamos las var, y cualquier cambio de ellas dará notif para q los observadores q dependan de esta clase AnimeVM (@ObservedObject @StateObject)lo sepan y se actualicen
-    @Published var animes:[MyAnimeModel]//animes es nuestro array completo
+    let persistance:Persistance
+  
+    @Published var animes:[MyAnimeModel]
     @Published var search = ""
-    @Published var animeTypes:AnimeType = .all //contiene el struct
+    @Published var animeTypes:AnimeType = .all
     @Published var statusTypes: AnimeStatus = .all
     @Published var sortedBy: SortedBy = .all
     
-    var filteredAnimes:[MyAnimeModel] {//var calculada
+    var filteredAnimes:[MyAnimeModel] {
         animes.filter { anime in
-            if search.isEmpty { //filter bool, true(se queda el valor), false(descarta)
-                return true //dev todo el array
+            if search.isEmpty {                return true
             } else {
-                return anime.title.lowercased().contains(search.lowercased())//pasamos a min. para búsq lo coja, contains hace comprobación de q anime "contiene" search con algo
+                return anime.title.lowercased().contains(search.lowercased())
             }
         }.filter { anime in
             switch animeTypes {

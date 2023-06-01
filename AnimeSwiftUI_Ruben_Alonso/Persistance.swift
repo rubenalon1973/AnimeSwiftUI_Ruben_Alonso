@@ -10,7 +10,7 @@ import Foundation
 protocol FileLocation {
     var fileURL: URL { get }
 }
-//Carga real
+
 struct FileProduction: FileLocation {
     var fileURL: URL {
         Bundle.main.url(forResource: "anime", withExtension: "json")!

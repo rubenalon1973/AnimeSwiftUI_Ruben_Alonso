@@ -1,6 +1,6 @@
 //
 //  AnimeModels.swift
-//  AnimeSwiftUI_Prueba
+//  AnimeSwiftUI_Ruben_Alonso
 //
 //  Created by Ruben Alonso on 11/4/23.
 //
@@ -21,7 +21,6 @@ struct AnimeModel: Codable, Hashable {
     let image: String
     let genres: String?
     
-    //    Enum para poder cargar los parámetros con nombre sin "_"
     enum CodingKeys: String, CodingKey {
         case title, description, year, type, votes, status, followers, episodes, genres, image
         case animeURL = "url_anime"
@@ -30,7 +29,7 @@ struct AnimeModel: Codable, Hashable {
 }
 
 struct MyAnimeModel: Codable, Identifiable, Hashable {
-    let id = UUID()//como está inicializado, no hace falta incluirlo en el enum case abajo
+    let id = UUID()
     let title: String
     let description: String?
     let year: Int
@@ -44,14 +43,14 @@ struct MyAnimeModel: Codable, Identifiable, Hashable {
     let image: String
     let genres: String?
     var isViewed: Bool
-    //    Enum para poder cargar los parámetros con nombre sin "_"
+    
     enum CodingKeys: String, CodingKey {
         case title, description, year, type, votes, status, followers, episodes, genres, image, isViewed
         case animeURL = "url_anime"
         case rateStar = "rate_start"
     }
 }
-//    Para agrupar y poder filtrar luego valores repetitivos de status
+
 enum AnimeStatus:String, Codable, CaseIterable, Identifiable {
     var id: AnimeStatus { self }//buscar información
     case finalizado = "Finalizado"
@@ -59,7 +58,7 @@ enum AnimeStatus:String, Codable, CaseIterable, Identifiable {
     case proximamente = "Proximamente"
     case all
 }
-//    Para agrupar y poder filtrar luego valores repetitivos de type
+
 enum AnimeType:String, Codable, CaseIterable, Identifiable {
     var id: AnimeType { self }//buscar información
     case anime = "Anime"
@@ -76,13 +75,14 @@ enum SortedBy:String, CaseIterable, Identifiable {
     case year = "Year"
     case all
 }
-//propio modelo de datos
+
 extension AnimeModel {
+    
     func mapToModel() -> MyAnimeModel {
         return MyAnimeModel(title: title,
                             description: description,
                             year: year,
-                            type: AnimeType(rawValue: type) ?? .all,//sacar opc con coalescencia nula
+                            type: AnimeType(rawValue: type) ?? .all,
                             rateStar: rateStar,
                             votes: votes,
                             status: AnimeStatus(rawValue: status) ?? .all,

@@ -1,12 +1,12 @@
 //
 //  Persistance.swift
-//  AnimeSwiftUI_Prueba
+//  AnimeSwiftUI_Ruben_Alonso
 //
 //  Created by Ruben Alonso on 12/4/23.
 //
 
 import Foundation
-//Carga versión para Preview
+
 protocol FileLocation {
     var fileURL: URL { get }
 }
@@ -17,7 +17,6 @@ struct FileProduction: FileLocation {
     }
 }
 
-//creamos singleton
 final class Persistance {
     static let shared = Persistance()
     let fileLocation:FileLocation
@@ -25,7 +24,6 @@ final class Persistance {
     
     init(fileLocation: FileLocation = FileProduction()) {
         self.fileLocation = fileLocation
-//        print(favoriteDocument)
     }
     
     func loadAnimes() throws -> [MyAnimeModel] {
@@ -42,7 +40,7 @@ final class Persistance {
     
     func saveAnimesViewed(animes: [MyAnimeModel]) throws {
         let encoder = JSONEncoder()
-        encoder.outputFormatting = .prettyPrinted //para ordenar el json en finder
+        encoder.outputFormatting = .prettyPrinted
         let saveData = try encoder.encode(animes)
         try saveData.write(to: favoriteDocument)
     }

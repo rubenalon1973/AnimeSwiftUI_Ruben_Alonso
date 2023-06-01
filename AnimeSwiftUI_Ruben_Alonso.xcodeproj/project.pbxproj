@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8043EC8629E5A9990073E882 /* AnimeSwiftUI_Prueba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeSwiftUI_Prueba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8043EC8629E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeSwiftUI_Ruben_Alonso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8043EC8929E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSwiftUI_PruebaApp.swift; sourceTree = "<group>"; };
 		8043EC8B29E5A9990073E882 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8043EC8D29E5A99A0073E882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		8043EC7D29E5A9990073E882 = {
 			isa = PBXGroup;
 			children = (
-				8043EC8829E5A9990073E882 /* AnimeSwiftUI_Prueba */,
+				8043EC8829E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso */,
 				8043EC8729E5A9990073E882 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,12 +57,12 @@
 		8043EC8729E5A9990073E882 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8043EC8629E5A9990073E882 /* AnimeSwiftUI_Prueba.app */,
+				8043EC8629E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8043EC8829E5A9990073E882 /* AnimeSwiftUI_Prueba */ = {
+		8043EC8829E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso */ = {
 			isa = PBXGroup;
 			children = (
 				8043EC9F29E5ACE70073E882 /* Models */,
@@ -72,7 +72,7 @@
 				8043EC9929E5AC3F0073E882 /* Resources */,
 				8043EC8F29E5A99A0073E882 /* Preview Content */,
 			);
-			path = AnimeSwiftUI_Prueba;
+			path = AnimeSwiftUI_Ruben_Alonso;
 			sourceTree = "<group>";
 		};
 		8043EC8F29E5A99A0073E882 /* Preview Content */ = {
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8043EC8529E5A9990073E882 /* AnimeSwiftUI_Prueba */ = {
+		8043EC8529E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8043EC9429E5A99A0073E882 /* Build configuration list for PBXNativeTarget "AnimeSwiftUI_Prueba" */;
+			buildConfigurationList = 8043EC9429E5A99A0073E882 /* Build configuration list for PBXNativeTarget "AnimeSwiftUI_Ruben_Alonso" */;
 			buildPhases = (
 				8043EC8229E5A9990073E882 /* Sources */,
 				8043EC8329E5A9990073E882 /* Frameworks */,
@@ -143,9 +143,9 @@
 			);
 			dependencies = (
 			);
-			name = AnimeSwiftUI_Prueba;
+			name = AnimeSwiftUI_Ruben_Alonso;
 			productName = AnimeSwiftUI_Prueba;
-			productReference = 8043EC8629E5A9990073E882 /* AnimeSwiftUI_Prueba.app */;
+			productReference = 8043EC8629E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8043EC8129E5A9990073E882 /* Build configuration list for PBXProject "AnimeSwiftUI_Prueba" */;
+			buildConfigurationList = 8043EC8129E5A9990073E882 /* Build configuration list for PBXProject "AnimeSwiftUI_Ruben_Alonso" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8043EC8529E5A9990073E882 /* AnimeSwiftUI_Prueba */,
+				8043EC8529E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso */,
 			);
 		};
 /* End PBXProject section */
@@ -334,7 +334,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AnimeSwiftUI_Prueba/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AnimeSwiftUI_Ruben_Alonso/Preview Content\"";
 				DEVELOPMENT_TEAM = EAPL44JCSU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -363,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AnimeSwiftUI_Prueba/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AnimeSwiftUI_Ruben_Alonso/Preview Content\"";
 				DEVELOPMENT_TEAM = EAPL44JCSU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -388,7 +388,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8043EC8129E5A9990073E882 /* Build configuration list for PBXProject "AnimeSwiftUI_Prueba" */ = {
+		8043EC8129E5A9990073E882 /* Build configuration list for PBXProject "AnimeSwiftUI_Ruben_Alonso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8043EC9229E5A99A0073E882 /* Debug */,
@@ -397,7 +397,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8043EC9429E5A99A0073E882 /* Build configuration list for PBXNativeTarget "AnimeSwiftUI_Prueba" */ = {
+		8043EC9429E5A99A0073E882 /* Build configuration list for PBXNativeTarget "AnimeSwiftUI_Ruben_Alonso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8043EC9529E5A99A0073E882 /* Debug */,

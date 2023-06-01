@@ -1,6 +1,6 @@
 //
 //  AnimeVM.swift
-//  AnimeSwiftUI_Prueba
+//  AnimeSwiftUI_Ruben_Alonso
 //
 //  Created by Ruben Alonso on 13/4/23.
 //
@@ -10,7 +10,7 @@ import Foundation
 final class AnimeVM:ObservableObject { //Objeto observable desde otro sitio
     
     let persistance:Persistance //aquí tenemos guardada la class Persistance
-//    publicamos las var, y cualquier cambio de ellas dará notif para q los observadores q dependan de esta clase AnimeVM (@ObservedObject @StateObject)lo sepan y se actualicen
+    //    publicamos las var, y cualquier cambio de ellas dará notif para q los observadores q dependan de esta clase AnimeVM (@ObservedObject @StateObject)lo sepan y se actualicen
     @Published var animes:[MyAnimeModel]//animes es nuestro array completo
     @Published var search = ""
     @Published var animeTypes:AnimeType = .all //contiene el struct
@@ -59,6 +59,7 @@ final class AnimeVM:ObservableObject { //Objeto observable desde otro sitio
             self.animes = []
         }
     }
+    
     func markAsWiewd(anime: MyAnimeModel) {
         if let selectedAnimeIndex = animes.firstIndex(where: { $0.id == anime.id }) {
             animes[selectedAnimeIndex].isViewed.toggle()

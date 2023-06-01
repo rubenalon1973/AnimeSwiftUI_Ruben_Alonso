@@ -1,12 +1,12 @@
 //
 //  ContentView.swift
-//  AnimeSwiftUI_Prueba
+//  AnimeSwiftUI_Ruben_Alonso
 //
 //  Created by Ruben Alonso on 11/4/23.
 //
 
 import SwiftUI
-//Vista de producción(real)
+
 struct ContentView: View {
     
     @EnvironmentObject var vm:AnimeVM
@@ -20,8 +20,9 @@ struct ContentView: View {
                 }
             }
             .navigationDestination(for: MyAnimeModel.self, destination: { anime in
-                DetailView(anime: anime)//Nos pasa de la vista principal a la de detalle de cada anime
+                DetailView(anime: anime)
             })
+            
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Menu("Filter") {
@@ -53,7 +54,7 @@ struct ContentView: View {
         .animation(.default, value: vm.search)
     }
 }
-//Vista previa simulador real time(para pruebas), q se mostrará en el Canvas de drcha
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
@@ -70,23 +71,19 @@ struct AnimeCell: View {
                     .resizable()
                     .frame(width: 105, height: 105)
                     .cornerRadius(10)
-//                HStack {
-//                    Text(anime.isViewed ? "Viewed" : "Unviewed")
-//                        .bold()
-//                }
                 HStack {
-                if anime.isViewed {
-                    Image(systemName: "checkmark.seal.fill")
-                        .foregroundColor(.green)
-                    Text("Viewed")
-                        .bold()
-                } else {
-                    Image(systemName: "xmark.seal")
-                        .foregroundColor(.red)
-                    Text("Unviewed")
-                        .bold()
+                    if anime.isViewed {
+                        Image(systemName: "checkmark.seal.fill")
+                            .foregroundColor(.green)
+                        Text("Viewed")
+                            .bold()
+                    } else {
+                        Image(systemName: "xmark.seal")
+                            .foregroundColor(.red)
+                        Text("Unviewed")
+                            .bold()
+                    }
                 }
-            }
             } placeholder: {
                 Image(systemName: "popcorn")
                     .resizable()

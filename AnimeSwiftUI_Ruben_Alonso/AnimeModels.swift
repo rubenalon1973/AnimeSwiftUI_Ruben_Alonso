@@ -52,7 +52,7 @@ struct MyAnimeModel: Codable, Identifiable, Hashable {
 }
 
 enum AnimeStatus:String, Codable, CaseIterable, Identifiable {
-    var id: AnimeStatus { self }//buscar información
+    var id: AnimeStatus { self }
     case finalizado = "Finalizado"
     case enEmision = "En emision"
     case proximamente = "Proximamente"
@@ -60,7 +60,7 @@ enum AnimeStatus:String, Codable, CaseIterable, Identifiable {
 }
 
 enum AnimeType:String, Codable, CaseIterable, Identifiable {
-    var id: AnimeType { self }//buscar información
+    var id: AnimeType { self }
     case anime = "Anime"
     case special = "Especial"
     case ova = "OVA"

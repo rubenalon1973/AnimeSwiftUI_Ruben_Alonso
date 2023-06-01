@@ -49,7 +49,7 @@ struct ContentView: View {
             }
             .navigationTitle("Animes")
             .listStyle(.insetGrouped)
-            .searchable(text: $vm.search, placement: .navigationBarDrawer(displayMode: .always), prompt: "search")//para quedarse fija la toolBar
+            .searchable(text: $vm.search, placement: .navigationBarDrawer(displayMode: .always), prompt: "search")
         }
         .animation(.default, value: vm.search)
     }
@@ -93,9 +93,7 @@ struct AnimeCell: View {
             VStack(alignment: .leading) {
                 Text(anime.title)
                     .bold()
-                Text("\(anime.episodes)")
-                    .foregroundColor(.red)
-                    .bold()
+                Text("Episodes: \(anime.episodes)")
                 Text(anime.type.rawValue)
             }
             .font(.title3)

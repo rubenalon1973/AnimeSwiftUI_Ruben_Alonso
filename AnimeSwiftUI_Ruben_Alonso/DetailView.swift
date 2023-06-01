@@ -32,9 +32,9 @@ struct DetailView: View {
                     Text(anime.title)
                         .font( .title)
                         .bold()
-                    Text("\(anime.year.description) year")
-                    Text("\(anime.votes.description) votes")
-                    Text("\(anime.followers.description) followers")
+                    Text("Premiere in \(vm.formatNumber(anime.year))")
+                    Text("\(vm.formatNumber(anime.votes)) votes")
+                    Text("\(vm.formatNumber(anime.followers)) followers")
                     Link(destination: URL(string: anime.animeURL)!){
                         Text("Navigate To episode")
                             .underline()

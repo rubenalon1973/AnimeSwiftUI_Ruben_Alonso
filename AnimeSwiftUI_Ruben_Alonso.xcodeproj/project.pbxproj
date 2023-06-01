@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8043EC8A29E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043EC8929E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift */; };
+		8043EC8A29E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043EC8929E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift */; };
 		8043EC8C29E5A9990073E882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043EC8B29E5A9990073E882 /* ContentView.swift */; };
 		8043EC8E29E5A99A0073E882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043EC8D29E5A99A0073E882 /* Assets.xcassets */; };
 		8043EC9129E5A99A0073E882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043EC9029E5A99A0073E882 /* Preview Assets.xcassets */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		8043EC8629E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeSwiftUI_Ruben_Alonso.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8043EC8929E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSwiftUI_PruebaApp.swift; sourceTree = "<group>"; };
+		8043EC8929E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSwiftUI_Ruben_Alonso.swift; sourceTree = "<group>"; };
 		8043EC8B29E5A9990073E882 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8043EC8D29E5A99A0073E882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8043EC9029E5A99A0073E882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		8043EC9E29E5ACDD0073E882 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				8043EC8929E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift */,
+				8043EC8929E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift */,
 			);
 			name = System;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 				8094317A29EBD66A006C8577 /* DetailView.swift in Sources */,
 				8043ECE129E867CE0073E882 /* AnimeModels.swift in Sources */,
 				8043ECE829E868E80073E882 /* AnimeVM.swift in Sources */,
-				8043EC8A29E5A9990073E882 /* AnimeSwiftUI_PruebaApp.swift in Sources */,
+				8043EC8A29E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

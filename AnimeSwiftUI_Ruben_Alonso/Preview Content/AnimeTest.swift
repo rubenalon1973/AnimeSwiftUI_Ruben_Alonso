@@ -7,17 +7,16 @@
 
 import Foundation
 
-//Creamos para carga de la preview, con menos elementos
 struct FilePreview:FileLocation {
     var fileURL: URL {
         Bundle.main.url(forResource: "animeTest", withExtension: "json")!//Lleva al Json de test
     }
 }
-//Creamos ext de la clase principal para cargar 1º la vs de prueba
+
 extension AnimeVM {
-    static let preview = AnimeVM(persistance: Persistance(fileLocation: FilePreview()))//al ser static se puede llamar desde fuera
+    static let preview = AnimeVM(persistance: Persistance(fileLocation: FilePreview()))
 }
-//Creamos ext del struct con una vs reducida, con datos de prueba aleatorios
+
 extension MyAnimeModel {
     static let test = MyAnimeModel(title: "Demon Slayer",//al ser static se puede llamar desde fuera
                                    description: "Mola que flipas",

@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct DetailView: View {
-    
+
     @EnvironmentObject var vm: AnimeVM
     @State var anime: MyAnimeModel
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -21,6 +21,8 @@ struct DetailView: View {
                         .scaledToFit()
                         .frame(width: 300)
                         .cornerRadius(10)
+                        .shadow(color: .white.opacity(70.0), radius: 10.0, x: 10, y: -5)
+
                 } placeholder: {
                     Image(systemName: "popcorn")
                         .resizable(resizingMode: .tile)
@@ -33,8 +35,11 @@ struct DetailView: View {
                         .font( .title)
                         .bold()
                     Text("Premiere in \(vm.formatNumber(anime.year))")
+                        .foregroundColor( .secondary.opacity(10.00))
                     Text("\(vm.formatNumber(anime.votes)) votes")
+                        .foregroundColor( .secondary.opacity(10.00))
                     Text("\(vm.formatNumber(anime.followers)) followers")
+                        .foregroundColor( .secondary.opacity(10.00))
                     Link(destination: URL(string: anime.animeURL)!){
                         Text("Navigate To episode")
                             .underline()
@@ -72,11 +77,17 @@ struct DetailView: View {
             }
         }
     }
+
     struct DetailView_Previews: PreviewProvider {
         static var previews: some View {
             DetailView(anime: AnimeVM.preview.animes[0])
                 .environmentObject(AnimeVM.preview)
+                .preferredColorScheme(.dark)
+
         }
     }
 }
+
+
+
 

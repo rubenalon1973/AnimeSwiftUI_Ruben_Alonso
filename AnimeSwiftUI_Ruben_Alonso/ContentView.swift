@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @EnvironmentObject var vm:AnimeVM
-    
+
     var body: some View {
-        
+
         NavigationStack {
             List(vm.filteredAnimes) { anime in
                 NavigationLink(value: anime) {
@@ -22,10 +22,10 @@ struct ContentView: View {
             .navigationDestination(for: MyAnimeModel.self, destination: { anime in
                 DetailView(anime: anime)
             })
-            
+
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Menu("Filter") {
+                    Menu {
                         Menu("Sorted By Type") {
                             Picker(selection: $vm.animeTypes) {
                                 ForEach(AnimeType.allCases) { animeType in
@@ -44,6 +44,8 @@ struct ContentView: View {
                                 Text("Oder By")
                             }
                         }
+                    } label: {
+                        Label("Filter", systemImage:  "line.3.horizontal.decrease.circle")
                     }
                 }
             }
@@ -59,6 +61,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(AnimeVM.preview)
+            .preferredColorScheme(.dark)
+
     }
 }
 
@@ -71,6 +75,7 @@ struct AnimeCell: View {
                     .resizable()
                     .frame(width: 105, height: 105)
                     .cornerRadius(10)
+                    .shadow(color: .white.opacity(70.0), radius: 10.0, x: 3, y: -3)
                 HStack {
                     if anime.isViewed {
                         Image(systemName: "checkmark.seal.fill")
@@ -94,7 +99,9 @@ struct AnimeCell: View {
                 Text(anime.title)
                     .bold()
                 Text("Episodes: \(anime.episodes)")
+                    .foregroundColor( .secondary.opacity(10.00))
                 Text(anime.type.rawValue)
+                    .foregroundColor( .secondary.opacity(10.00))
             }
             .font(.title3)
         }
@@ -102,6 +109,7 @@ struct AnimeCell: View {
         Spacer()
     }
 }
+
 
 
 

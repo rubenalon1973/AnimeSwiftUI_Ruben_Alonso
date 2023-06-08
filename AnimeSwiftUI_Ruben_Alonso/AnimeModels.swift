@@ -64,7 +64,7 @@ enum AnimeType:String, Codable, CaseIterable, Identifiable {
     case anime = "Anime"
     case special = "Especial"
     case ova = "OVA"
-    case Película = "Película"
+    case pelicula = "Película"
     case all
 }
 

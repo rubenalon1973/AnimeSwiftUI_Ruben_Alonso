@@ -18,7 +18,7 @@ extension AnimeVM {
 }
 
 extension MyAnimeModel {
-    static let test = MyAnimeModel(title: "Demon Slayer",//al ser static se puede llamar desde fuera
+    static let test = MyAnimeModel(title: "Demon Slayer",
                                    description: "Mola que flipas",
                                    year: 2021,
                                    type: .all,

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8043EC8A29E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043EC8929E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift */; };
-		8043EC8C29E5A9990073E882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043EC8B29E5A9990073E882 /* ContentView.swift */; };
+		8043EC8C29E5A9990073E882 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043EC8B29E5A9990073E882 /* MainListView.swift */; };
 		8043EC8E29E5A99A0073E882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043EC8D29E5A99A0073E882 /* Assets.xcassets */; };
 		8043EC9129E5A99A0073E882 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043EC9029E5A99A0073E882 /* Preview Assets.xcassets */; };
 		8043ECA529E6FB330073E882 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043ECA429E6FB330073E882 /* Persistance.swift */; };
@@ -18,12 +18,13 @@
 		8043ECE829E868E80073E882 /* AnimeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043ECE729E868E80073E882 /* AnimeVM.swift */; };
 		8043ECEA29E86A7F0073E882 /* AnimeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043ECE929E86A7F0073E882 /* AnimeTest.swift */; };
 		8094317A29EBD66A006C8577 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094317929EBD66A006C8577 /* DetailView.swift */; };
+		80E3C2FC2A338C1B004CE5F2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E3C2FB2A338C1B004CE5F2 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8043EC8629E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeSwiftUI_Ruben_Alonso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8043EC8929E5A9990073E882 /* AnimeSwiftUI_Ruben_Alonso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSwiftUI_Ruben_Alonso.swift; sourceTree = "<group>"; };
-		8043EC8B29E5A9990073E882 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8043EC8B29E5A9990073E882 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		8043EC8D29E5A99A0073E882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8043EC9029E5A99A0073E882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8043ECA429E6FB330073E882 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		8043ECE729E868E80073E882 /* AnimeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeVM.swift; sourceTree = "<group>"; };
 		8043ECE929E86A7F0073E882 /* AnimeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTest.swift; sourceTree = "<group>"; };
 		8094317929EBD66A006C8577 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		80E3C2FB2A338C1B004CE5F2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,8 @@
 		8094317829EAF397006C8577 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8043EC8B29E5A9990073E882 /* ContentView.swift */,
+				80E3C2FB2A338C1B004CE5F2 /* MainTabView.swift */,
+				8043EC8B29E5A9990073E882 /* MainListView.swift */,
 				8094317929EBD66A006C8577 /* DetailView.swift */,
 			);
 			name = Views;
@@ -201,7 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8043ECEA29E86A7F0073E882 /* AnimeTest.swift in Sources */,
-				8043EC8C29E5A9990073E882 /* ContentView.swift in Sources */,
+				80E3C2FC2A338C1B004CE5F2 /* MainTabView.swift in Sources */,
+				8043EC8C29E5A9990073E882 /* MainListView.swift in Sources */,
 				8043ECA529E6FB330073E882 /* Persistance.swift in Sources */,
 				8094317A29EBD66A006C8577 /* DetailView.swift in Sources */,
 				8043ECE129E867CE0073E882 /* AnimeModels.swift in Sources */,

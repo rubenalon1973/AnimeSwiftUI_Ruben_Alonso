@@ -14,6 +14,11 @@ final class AnimeVM: ObservableObject {
     @Published var search = ""
     @Published var animeTypes: AnimeType = .all
     @Published var sortedBy: SortedBy = .all
+    @Published var animesViewed: [MyAnimeModel] = []
+    
+    var selectedAnimesViewed: [MyAnimeModel] {
+        animesViewed.filter { $0.isViewed }
+    }
     
     var filteredAnimes: [MyAnimeModel] {
         animes.filter { anime in

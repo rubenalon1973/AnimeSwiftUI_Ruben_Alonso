@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainListView: View {
 
     @EnvironmentObject var vm:AnimeVM
 
@@ -22,7 +22,6 @@ struct ContentView: View {
             .navigationDestination(for: MyAnimeModel.self, destination: { anime in
                 DetailView(anime: anime)
             })
-
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Menu {
@@ -59,7 +58,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainListView()
             .environmentObject(AnimeVM.preview)
             .preferredColorScheme(.dark)
 

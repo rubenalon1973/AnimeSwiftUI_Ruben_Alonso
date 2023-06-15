@@ -17,7 +17,7 @@ final class AnimeVM: ObservableObject {
     @Published var animesViewed: [MyAnimeModel] = []
     
     var selectedAnimesViewed: [MyAnimeModel] {
-        animesViewed.filter { $0.isViewed }
+        animes.filter { $0.isViewed }
     }
     
     var filteredAnimes: [MyAnimeModel] {
@@ -69,6 +69,8 @@ final class AnimeVM: ObservableObject {
             animes[selectedAnimeIndex].isViewed.toggle()
             do {
                 try persistance.saveAnimesViewed(animes: animes)
+                animesViewed = animes.filter { $0.isViewed }
+                print("Animes Viewed: \(animesViewed)")
             } catch {
                 print(error)
             }

@@ -12,10 +12,14 @@ struct MainTabView: View {
         TabView {
             MainListView()
                 .tabItem {
-                    Label("Anime viewed", systemImage: "text.badge.checkmark")
+                    Label("Anime list", systemImage: "list.bullet")
+                }
+            
+            ListViewedAnime()
+                .tabItem {
+                    Label("List viewed", systemImage: "text.badge.checkmark")
                 }
         }
-
     }
 }
 

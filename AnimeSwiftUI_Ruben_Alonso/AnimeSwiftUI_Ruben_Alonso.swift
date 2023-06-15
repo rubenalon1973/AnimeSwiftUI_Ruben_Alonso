@@ -13,7 +13,7 @@ struct AAnimeSwiftUI_Ruben_Alonso: App {
     
     var body: some Scene {
         WindowGroup {
-            MainListView()
+            MainTabView()
                 .environmentObject(vm)
                 .preferredColorScheme(.dark)
         }

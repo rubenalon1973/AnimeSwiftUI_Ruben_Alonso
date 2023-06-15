@@ -56,7 +56,7 @@ struct MainListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainListView_Previews: PreviewProvider {
     static var previews: some View {
         MainListView()
             .environmentObject(AnimeVM.preview)

@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct MainListView: View {
-
     @EnvironmentObject var vm:AnimeVM
-
+    
     var body: some View {
-
+        
         NavigationStack {
             List(vm.filteredAnimes) { anime in
                 NavigationLink(value: anime) {
@@ -48,7 +47,7 @@ struct MainListView: View {
                     }
                 }
             }
-            .navigationTitle("Animes")
+            .navigationTitle("Animes_copy")
             .listStyle(.insetGrouped)
             .searchable(text: $vm.search, placement: .navigationBarDrawer(displayMode: .always), prompt: "search")
         }
@@ -61,7 +60,7 @@ struct MainListView_Previews: PreviewProvider {
         MainListView()
             .environmentObject(AnimeVM.preview)
             .preferredColorScheme(.dark)
-
+        
     }
 }
 
@@ -103,6 +102,7 @@ struct AnimeCell: View {
                     .foregroundColor( .secondary.opacity(10.00))
             }
             .font(.title3)
+            .padding(.horizontal)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         Spacer()
